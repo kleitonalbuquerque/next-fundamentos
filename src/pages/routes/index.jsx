@@ -21,14 +21,20 @@ export default function rotas() {
     <div>
       <h1>Rotas Index</h1>
       <ul>
-        <Link href="/routes/params?id=12&nome=Ana&idade=12">
-          <li>Params</li>
+        <Link href="/routes/params?id=12&nome=Mariana&idade=2">
+          <a>
+            <li>Params</li>
+          </a>
         </Link>
         <Link href="/routes/123/buscar">
-          <li>Buscar</li>
+          <a>
+            <li>Buscar</li>
+          </a>
         </Link>
         <Link href="/routes/123/Mariana">
-          <li>Mariana</li>
+          <a>
+            <li>Mariana</li>
+          </a>
         </Link>
       </ul>
       <div
@@ -39,8 +45,8 @@ export default function rotas() {
         }}
       >
         <button onClick={navegacaoComParams}>Params</button>
-        <button onClick={() => navegacaoSimples("/routes/123/Mariana")}>
-          Mariana
+        <button onClick={() => navegacaoSimples("/routes/123/buscar")}>
+          Buscar
         </button>
         <button onClick={() => navegacaoSimples("/routes/123/Mariana")}>
           Mariana
